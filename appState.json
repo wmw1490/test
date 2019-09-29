@@ -1,0 +1,99 @@
+{
+  "EDITOR_STATE": {
+    "allProjectFiles": {
+      "5b31a96c-32ca-468c-8ce8-b4350514fe72": {
+        "id": "5b31a96c-32ca-468c-8ce8-b4350514fe72",
+        "parent": null,
+        "name": "test",
+        "type": "DIRECTORY",
+        "isDirectory": true,
+        "children": [
+          "53b71e86-54b7-46c9-9fad-bf3cf6ea0d92",
+          "b4e25848-bd41-4f80-8f51-b3fcdc108259"
+        ],
+        "isRemovable": false,
+        "filePath": "test"
+      },
+      "53b71e86-54b7-46c9-9fad-bf3cf6ea0d92": {
+        "id": "53b71e86-54b7-46c9-9fad-bf3cf6ea0d92",
+        "parent": "5b31a96c-32ca-468c-8ce8-b4350514fe72",
+        "name": "handler.py",
+        "type": "PYTHON_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "test/handler.py",
+        "code": "import boto3\n\n\ndef handler(event, context):\n    \n    return {\"message\": \"Successfully executed\"}\n",
+        "config": {
+          "runtime": "python3.6",
+          "handler": "handler",
+          "timeout": 60,
+          "memory": 128,
+          "layers": []
+        },
+        "triggers": []
+      },
+      "b4e25848-bd41-4f80-8f51-b3fcdc108259": {
+        "id": "b4e25848-bd41-4f80-8f51-b3fcdc108259",
+        "parent": "5b31a96c-32ca-468c-8ce8-b4350514fe72",
+        "name": "__init__.py",
+        "type": "PYTHON_FILE",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "test/__init__.py",
+        "code": ""
+      }
+    },
+    "deletedFiles": [
+      "test/lambda.js"
+    ],
+    "rootNode": "5b31a96c-32ca-468c-8ce8-b4350514fe72",
+    "openFiles": [
+      "53b71e86-54b7-46c9-9fad-bf3cf6ea0d92"
+    ],
+    "currentFileId": "53b71e86-54b7-46c9-9fad-bf3cf6ea0d92",
+    "resources": {},
+    "customTemplate": {
+      "dialect": null,
+      "definitions": {}
+    },
+    "envVariables": [
+      {
+        "lambdaId": "all",
+        "varKey": "SIGMA_AWS_ACC_ID",
+        "varValue": null,
+        "shouldPersist": false,
+        "displayOnly": false,
+        "editable": false
+      },
+      {
+        "lambdaId": "53b71e86-54b7-46c9-9fad-bf3cf6ea0d92",
+        "varKey": "PYTHONPATH",
+        "varValue": "/var/runtime:/var/task/test",
+        "shouldPersist": true,
+        "displayOnly": false,
+        "editable": true
+      }
+    ],
+    "packageJSON": {
+      "dependencies": {}
+    }
+  },
+  "PROJECT_META": {
+    "projectName": "test",
+    "projectDescription": "",
+    "projectVersion": "1.0.0",
+    "projectRegion": "us-east-1",
+    "platform": "AWS",
+    "platformRegions": {},
+    "lastSave": 1569792079514
+  },
+  "VCS_STATE": {
+    "provider": "GitHub",
+    "repo": {
+      "name": "test",
+      "url": "https://github.com/wmw1490/test"
+    }
+  }
+}
